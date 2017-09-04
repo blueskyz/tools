@@ -7,10 +7,13 @@ import webbrowser
 
 
 if __name__ == '__main__':
+    chrome = webbrowser.get('chrome')
+    if len(sys.argv) == 2 and sys.argv[1] == 'doc':
+        chrome.open_new_tab('http://localhost:8888/doc/index.html')
+        sys.exit(0)
+
     if len(sys.argv) != 3:
         print('params err')
-
-    chrome = webbrowser.get('chrome')
 
     if sys.argv[1] == 'google.com':
         search_url = 'http://www.google.com/search?q={}'.format(sys.argv[2])
