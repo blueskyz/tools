@@ -12,3 +12,8 @@ parse_db_schema.py
 ## 扫描目录，转换 markdown 文件到 html 文件
 
 doc_creator.py
+
+
+## 命令行打开浏览器搜索的小工具
+
+gosearch.py
