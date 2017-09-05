@@ -117,9 +117,12 @@ class CreatorHtml():
         '''
         all_content = []
 
+        # 添加自定义文档链接
         paragraph = '<h1>{}</h1>'.format('go，python 开发文档')
         all_content.append(paragraph)
         all_content.append('<ul>')
+        item = '<li><a href="http://nodejs.cn/api/">nodejs</a></li>'
+        all_content.append(item)
         item = '<li><a href="http://localhost:5001">python</a></li>'
         all_content.append(item)
         item = '<li><a href="http://localhost:5002">golang</a></li>'
